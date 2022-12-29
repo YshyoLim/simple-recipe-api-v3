@@ -8,7 +8,7 @@ dotenv.config();
 
 let app = express();
 app.use(express.json())
-app.use(cor())
+app.use(cors())
 
 async function connect(){
     const mongo_url = process.env.MONGO_URI
